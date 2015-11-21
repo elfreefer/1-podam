@@ -3,8 +3,3 @@ machine:
     version: oraclejdk8
     version: oraclejdk7
     version: openjdk6
-
-test:
- override:
-    - mkdir -p $CIRCLE_TEST_REPORTS/cucumber
-    - bundle exec cucumber --format json --out $CIRCLE_TEST_REPORTS/cucumber/tests.cucumber
